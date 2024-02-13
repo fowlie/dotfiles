@@ -1,0 +1,38 @@
+(defcfg
+  input (device-file "/dev/input/by-path/platform-i8042-serio-0-event-kbd")
+  output (uinput-sink "My kmonad config")
+  cmp-seq ralt
+  fallthrough true
+)
+
+(defsrc
+  esc  mute vold volu                          prnt slck pause ins del  home pgup
+       f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11   f12      end  pgdn
+  grv  1    2    3    4    5    6    7    8    9    0    -     =        bspc
+  tab  q    w    e    r    t    y    u    i    o    p    [     ]        ret
+  caps a    s    d    f    g    h    j    k    l    ;    '     \
+  lsft 102d z    x    c    v    b    n    m    ,    .    /              rsft
+  wkup lctl lmet lalt           spc            ralt cmps rctl      back up   fwd
+)
+
+(deflayer default
+  esc  mute vold volu                          prnt slck pause ins del  home pgup
+       f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11   f12      end  pgdn
+  grv  1    2    3    4    5    6    7    8    9    0    -     =        bspc
+  tab  q    w    e    r    t    y    u    i    o    p    [     ]        ret
+  caps a    s    d    f    g    h    j    k    l    ;    '     \
+  lsft 102d z    x    c    v    b    n    m    ,    .    /              rsft
+  wkup lctl lmet @nav           spc            ralt cmps rctl      back up   fwd
+)
+
+(defalias nav (layer-toggle navigation))
+
+(deflayer navigation
+  esc  mute vold volu                          prnt  slck pause ins del  home pgup
+       f1   f2   f3   f4   f5   f6   f7   f8   f9    f10  f11   f12      end  pgdn
+  grv  1    2    3    4    5    6    7    8    9     0    -     =        bspc
+  tab  q    w    e    r    t    y    u    i    o     p    [     ]        ret
+  caps a    s    d    f    g    left down up   right ;    '     \
+  lsft 102d z    x    c    v    b    n    m    ,     .    /              rsft
+  wkup lctl lmet ralt           spc            ralt  cmps rctl      back up   fwd
+)
