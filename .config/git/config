@@ -1,0 +1,9 @@
+[User]
+  name = "Mats Faugli"
+  email = "mats.faugli@gmail.com"
+
+[Column]
+  ui = "auto"
+
+[Branch]
+  sort = "-committerdate"
