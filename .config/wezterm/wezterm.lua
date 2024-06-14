@@ -6,6 +6,9 @@ if wezterm.config_builder then
 end
 
 config.color_scheme = "Catppuccin Mocha"
+config.window_decorations = "NONE"
+config.hide_tab_bar_if_only_one_tab = true
+config.window_background_opacity = 1.0
 
 -- config.window_background_opacity = 0.90
 -- config.font = wezterm.font("Monaspace Neon", { weight = "Light" })
