@@ -8,6 +8,14 @@ My personal dotfiles repo managed using GNU Stow.
 In the current directory simply run `stow .`
 
 
+## Adoption
+
+If you have some config files in ~/.config that you want adopt:
+
+1. Copy the files into this repo, keeping the folder structure.
+2. Run `stow --adopt .`
+
+
 ## Software
 
 A list of software I use for my personal setup:
