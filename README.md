@@ -24,6 +24,6 @@ A list of software I use for my personal setup:
 |--------------------------------------------|---------------------------------------------------|
 | [fish](https://fishshell.com)              | The most user-friendly shell there is             |
 | [homebrew](https://docs.brew.sh)           | The Homebrew package manager                      |
-| [kmonad](https://github.com/kmonad/kmonad) | Customize keyboards with layers and macros        |
 | [starship](https://starship.rs)            | Zero config cross-shell prompt that rocks         |
+| [tmux](https://github.com/tmux/tmux)       | Terminal multiplexer for increased productivity   |
 | [wezterm](https://github.com/wez/wezterm)  | Fast and modern terminal emulator with Lua config |
