@@ -1,0 +1,23 @@
+import:
+  - ~/.config/alacritty/catppuccin-mocha.yml
+
+shell:
+  program: /home/linuxbrew/.linuxbrew/bin/fish
+
+window:
+  opacity: 0.9
+
+font:
+  normal:
+    family: IosevkaTerm Nerd Font
+    style: Light
+  bold:
+    family: IosevkaTerm Nerd Font
+    style: Bold
+  italic:
+    family: IosevkaTerm Nerd Font
+    style: Italic
+  bold_italic:
+    family: IosevkaTerm Nerd Font
+    style: Bold Italic
+  size: 12.0
