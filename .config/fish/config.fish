@@ -1,6 +1,7 @@
 fish_add_path /home/linuxbrew/.linuxbrew/bin
 
 set -x EDITOR nvim
+set -x NVIM_APPNAME LazyVim # Default neovim config directory
 
 # Set empty greeting
 set -g fish_greeting
