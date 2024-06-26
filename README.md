@@ -26,3 +26,4 @@ A list of software I use for my personal setup:
 | [kitty](https://sw.kovidgoyal.net/kitty)     | The best terminal emulator ever                          |
 | [starship](https://starship.rs)              | Zero config cross-shell prompt that rocks                |
 | [tmux](https://github.com/tmux/tmux)         | Terminal multiplexer for increased productivity          |
+| [yazi](https://github.com/sxyazi/yazi)       | Blazing fast terminal file manager                       |
