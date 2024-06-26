@@ -1,4 +1,5 @@
 fish_add_path /home/linuxbrew/.linuxbrew/bin
+fish_add_path $HOME/.local/bin/
 
 set -x EDITOR nvim
 set -x NVIM_APPNAME LazyVim # Default neovim config directory
