@@ -23,3 +23,13 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
     starship init fish | source
 end
+
+# Added by `rbenv init` on on. 21. mai 22:56:05 +0200 2025
+status --is-interactive; and rbenv init - --no-rehash fish | source
+
+# pnpm
+set -gx PNPM_HOME "/home/mats/.local/share/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+  set -gx PATH "$PNPM_HOME" $PATH
+end
+# pnpm end
